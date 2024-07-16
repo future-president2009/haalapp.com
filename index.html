@@ -1,117 +1,58 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Epilogue%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-    />
-
-    <title> HAAL </title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex min-h-screen flex-col bg-[#f8f9fc] group/design-root overflow-x-hidden" style="font-family: Epilogue, 'Noto Sans', sans-serif;">
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7ecf3] px-4 sm:px-10 py-3">
-          <div class="flex items-center gap-4 text-[#0d131b]">
-            <h2 class="text-[#0d131b] text-lg font-bold leading-tight tracking-[-0.015em]">HAAL</h2>
-          </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAAL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HAAL</h1>
         </header>
-        <div class="gap-1 px-4 sm:px-6 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-full sm:max-w-[920px] flex-1">
-            <div class="@container">
-              <div class="flex flex-col gap-6 px-2 sm:px-4 py-6 sm:py-10 md:gap-8">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl sm:h-auto"
-                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e846b766-26fd-4626-85e2-b2ddb31ad6a2.png");'
-                ></div>
-                <div class="flex flex-col gap-6 md:gap-8 justify-center">
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-[#0d131b] text-2xl sm:text-4xl font-black leading-tight tracking-[-0.033em]"
-                    >
-                      HAAL is the premier mental health app for Gen Z
-                    </h1>
-                    <h2 class="text-[#0d131b] text-base font-normal leading-normal">
-                      Featuring daily mood check-ins, a journal, breathing exercises, and resources
-                    </h2>
-                  </div>
-                  <a
-                    href="https://apps.apple.com/th/app/haal/id6477761521"
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 sm:h-12 sm:px-5 bg-[#1366ec] text-[#f8f9fc] text-sm font-bold leading-normal tracking-[0.015em] sm:text-base sm:font-bold sm:leading-normal sm:tracking-[0.015em]"
-                  >
-                    <span class="truncate">Download on the App Store</span>
-                  </a>
+        <main>
+            <section class="hero">
+                <img src="https://cdn.usegalileo.ai/sdxl10/e846b766-26fd-4626-85e2-b2ddb31ad6a2.png" alt="Mental health app illustration">
+                <div class="hero-content">
+                    <h2>HAAL is the premier mental health app for Gen Z</h2>
+                    <p>Featuring daily mood check-ins, a journal, breathing exercises, and resources</p>
+                    <a href="https://apps.apple.com/th/app/haal/id6477761521" class="btn">Download on the App Store</a>
                 </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-6 px-2 sm:px-4 py-6 sm:py-10 @container">
-              <div class="flex flex-col gap-4">
-                <h1
-                  class="text-[#0d131b] tracking-light text-xl sm:text-4xl font-bold leading-tight max-w-full sm:max-w-[720px]"
-                >
-                  Features
-                </h1>
-                <p class="text-[#0d131b] text-base font-normal leading-normal max-w-full">
-                  HAAL is a mental health app that helps you take care of yourself. It's designed to be easy to use and to help you feel good every day.
-                </p>
-              </div>
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 p-0">
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#cfd8e7] bg-[#f8f9fc] p-4 flex-col">
-                  <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0d131b] text-base font-bold leading-tight">Journal</h2>
-                    <p class="text-[#4c6a9a] text-sm font-normal leading-normal">Write down your thoughts and feelings</p>
-                  </div>
+            </section>
+            <section class="features">
+                <h3>Features</h3>
+                <p>HAAL is a mental health app that helps you take care of yourself. It's designed to be easy to use and to help you feel good every day.</p>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h4>Journal</h4>
+                        <p>Write down your thoughts and feelings</p>
+                        <img src="https://cdn.usegalileo.ai/sdxl10/ef935dbd-f058-47af-84a6-7732b32784cf.png" alt="Journal illustration">
+                    </div>
+                    <div class="feature-item">
+                        <h4>Mood tracker</h4>
+                        <p>Track your mood every day to see patterns</p>
+                        <img src="https://cdn.usegalileo.ai/stability/f60f49a6-72d5-4154-a0d8-0e617326afe5.png" alt="Mood tracker illustration">
+                    </div>
+                    <div class="feature-item">
+                        <h4>Resources</h4>
+                        <p>Access a variety of mental health tools and information</p>
+                        <img src="https://cdn.usegalileo.ai/sdxl10/e78ff7b3-5b8a-4569-b7e4-0bcc1ad7de18.png" alt="Resources illustration">
+                    </div>
                 </div>
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#cfd8e7] bg-[#f8f9fc] p-4 flex-col">
-                  <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0d131b] text-base font-bold leading-tight">Mood tracker</h2>
-                    <p class="text-[#4c6a9a] text-sm font-normal leading-normal">Track your mood every day to see patterns</p>
-                  </div>
-                </div>
-                <div class="flex flex-1 gap-3 rounded-lg border border-[#cfd8e7] bg-[#f8f9fc] p-4 flex-col">
-                  <div class="flex flex-col gap-1">
-                    <h2 class="text-[#0d131b] text-base font-bold leading-tight">Resources</h2>
-                    <p class="text-[#4c6a9a] text-sm font-normal leading-normal">Access a variety of mental health tools and information</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4">
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ef935dbd-f058-47af-84a6-7732b32784cf.png");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/stability/f60f49a6-72d5-4154-a0d8-0e617326afe5.png");'
-                ></div>
-              </div>
-              <div class="flex flex-col gap-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
-                  style='background-image: url("https://cdn.usegalileo.ai/sdxl10/e78ff7b3-5b8a-4569-b7e4-0bcc1ad7de18.png");'
-                ></div>
-              </div>
-            </div>
-            <h3 class="text-[#0d131b] tracking-light text-2xl font-bold leading-tight px-2 sm:px-4 text-left pb-2 pt-5">Awards</h3>
-            <a href="http://congressionalappchallenge.us/23-il14/" class="text-[#1266EC] underline text-base font-normal leading-normal pb-3 pt-1 px-2 sm:px-4">Congressional App Challenge Winner</a>
-          </div>
-        </div>
-        <footer class="flex items-center justify-start py-3 px-4 sm:px-11 bg-[#f8f9fc] border-t border-solid border-t-[#e7ecf3]">
-          <p class="text-[#0d131b] text-lg font-normal leading-normal">
-            © Maya Sharma 2024 | <a href="mailto:maayusharma@gmail.com" class="text-[#000000] underline">maayusharma@gmail.com</a>
-            <a href="https://www.linkedin.com/in/mayasharma27" class="ml-4"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-7 h-7 inline"></a>
-          </p>
+            </section>
+            <section class="awards">
+                <h3>Awards</h3>
+                <a href="https://www.congressionalappchallenge.us/23-il14/">Congressional App Challenge Winner</a>
+            </section>
+        </main>
+        <footer>
+            <p>© Maya Sharma 2024 | <a href="mailto:maayusharma@gmail.com">maayusharma@gmail.com</a></p>
+            <a href="https://www.linkedin.com/in/mayasharma27/">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-icon">
+            </a>
         </footer>
-      </div>
     </div>
-  </body>
+</body>
 </html>
