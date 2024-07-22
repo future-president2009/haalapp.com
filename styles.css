@@ -22,21 +22,22 @@ h1 {
 
 .hero {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero img {
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .hero-content {
-    max-width: 600px;
-    margin-left: 20px;
+    text-align: center;
 }
 
 .hero h2 {
@@ -69,10 +70,12 @@ h1 {
 
 .features p {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .feature-grid {
     display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -108,7 +111,8 @@ h1 {
 footer {
     margin-top: 40px;
     text-align: center;
-    padding: 20px 0; 
+    padding: 20px 0;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -128,4 +132,21 @@ footer a {
     height: 24px;
     vertical-align: middle;
     margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .feature-grid {
+        flex-direction: row;
+    }
 }
